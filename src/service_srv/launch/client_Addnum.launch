@@ -1,0 +1,5 @@
+<launch>
+    <node pkg = "service_srv" type = "client_Addnum" name = "client_Addnum" output = "screen" args = "10 20"/>
+
+
+</launch>
