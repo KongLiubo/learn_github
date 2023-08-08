@@ -1,5 +1,7 @@
 <launch>
-    <node pkg = "service_srv" type = "client_Addnum" name = "client_Addnum" output = "screen" args = "10 20"/>
+    <arg name = "param1" default = "20" />
+    <arg name = "param2" default = "40" />
+    <node pkg = "service_srv" type = "client_Addnum" name = "client_Addnum" output = "screen" args = "$(arg param1) $(arg param2)"/>
 
 
 </launch>
